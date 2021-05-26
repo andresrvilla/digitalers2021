@@ -1,0 +1,7 @@
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\HolaMundo\HolaMundo\bin\Debug\HolaMundo.exe.config
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\HolaMundo\HolaMundo\bin\Debug\HolaMundo.exe
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\HolaMundo\HolaMundo\bin\Debug\HolaMundo.pdb
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\HolaMundo\HolaMundo\obj\Debug\HolaMundo.csprojAssemblyReference.cache
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\HolaMundo\HolaMundo\obj\Debug\HolaMundo.csproj.CoreCompileInputs.cache
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\HolaMundo\HolaMundo\obj\Debug\HolaMundo.exe
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\HolaMundo\HolaMundo\obj\Debug\HolaMundo.pdb

@@ -1,0 +1,7 @@
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\Variables\Variables\bin\Debug\Variables.exe.config
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\Variables\Variables\bin\Debug\Variables.exe
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\Variables\Variables\bin\Debug\Variables.pdb
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\Variables\Variables\obj\Debug\Variables.csprojAssemblyReference.cache
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\Variables\Variables\obj\Debug\Variables.csproj.CoreCompileInputs.cache
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\Variables\Variables\obj\Debug\Variables.exe
+D:\Users\ravil\Desktop\Digitalers2021\Clase02\Variables\Variables\obj\Debug\Variables.pdb
