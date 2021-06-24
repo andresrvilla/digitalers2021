@@ -31,6 +31,22 @@ namespace SistemaAlumnos
             Console.WriteLine(otroAlumno.ObtenerSaludoFormal("Ing"));
             Console.WriteLine(otroAlumno.ObtenerEdad());
 
+            Instructor elInstructor = new Instructor();
+            elInstructor.Apellido = "Villa";
+            elInstructor.Nombre = "";
+
+            Console.WriteLine(elInstructor.NombreCompleto);
+
+            Curso elCurso = new Curso("C#!");
+
+            elCurso.ElInstructor = elInstructor;
+            elCurso.Nombre = "C#";
+            elCurso.Alumnos = new List<Alumno>();
+            elCurso.Alumnos.Add(alumno);
+            elCurso.Alumnos.Add(otroAlumno);
+
+            Curso otroCurso = new Curso();
+
             Console.ReadKey();
         }
     }
