@@ -8,6 +8,8 @@ namespace FigurasGeometricas
 {
     class Rectangulo : FiguraGeometrica
     {
+        public override string Tipo => "Rectangulo";
+
         public virtual int LadoA { get; set; }
 
         public virtual int LadoB { get; set; }

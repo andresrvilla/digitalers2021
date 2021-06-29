@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Circunferencia.cs" />
     <Compile Include="Cuadrado.cs" />
     <Compile Include="FiguraGeometrica.cs" />
+    <Compile Include="IGuardable.cs" />
+    <Compile Include="Matematica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rectangulo.cs" />
