@@ -1,0 +1,5 @@
+- Tener un usuario en GitHub
+- Crear un nuevo repositorio donde trabajar
+- Crear un sitio web con dos páginas, una página principal que sería un "CV" digital y una segunda página con un formulario de contacto.
+- Deberá estar programado como un sitio de ASP.NET
+- Deberá utilizar HTML y CSS, aplicando todos los conceptos aprendidos en el introductorio
