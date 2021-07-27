@@ -11,7 +11,8 @@
                 </div>
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Laoreet id donec ultrices tincidunt arcu non sodales neque. Semper viverra nam libero justo laoreet sit amet cursus sit. Massa massa ultricies mi quis hendrerit dolor. Arcu vitae elementum curabitur vitae nunc. Ac turpis egestas integer eget aliquet. Purus ut faucibus pulvinar elementum integer enim. Viverra maecenas accumsan lacus vel facilisis. Aliquet nibh praesent tristique magna. Tincidunt augue interdum velit euismod in pellentesque.</p>
-                    <a href="MasInformacion/QuienSoy.aspx" class="btn btn-info">Leer Más</a>
+                    <%--<a href="MasInformacion/QuienSoy.aspx" class="btn btn-info">Leer Más</a>--%>
+                    <asp:button runat="server" ID="btnRedirigirQuienSoy" Text="Leer Más" CssClass="btn btn-info" OnClick="btnRedirigirQuienSoy_Click" />
                 </div>
             </div>
         </div>

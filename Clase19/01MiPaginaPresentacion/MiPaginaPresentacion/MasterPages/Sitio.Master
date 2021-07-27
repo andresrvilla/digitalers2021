@@ -46,7 +46,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="text-primary">Carlos Suarez</h1>
+                    <h1 class="text-primary"><asp:Label runat="server" ID="lblNombrePersona"></asp:Label></h1>
                     <h3>Bienvenidos a mi sitio web personal</h3>
                 </div>
             </div>

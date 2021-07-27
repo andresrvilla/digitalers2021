@@ -31,5 +31,15 @@ namespace MiPaginaPresentacion
             lstProyectos.DataSource = proyectos;
             lstProyectos.DataBind();
         }
+
+        protected void btnRedirigirQuienSoy_Click(object sender, EventArgs e)
+        {
+            //Server.Transfer carga la pagina pero no cambia la url
+            //Es decir, carga la pagina en el servidor
+            //Server.Transfer("~/MasInformacion/QuienSoy.aspx");
+
+            //Si quiero que funcione como un link, tengo que hacer esto:
+            Response.Redirect("~/MasInformacion/QuienSoy.aspx");
+        }
     }
 }
