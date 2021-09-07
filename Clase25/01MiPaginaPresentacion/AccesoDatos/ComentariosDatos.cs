@@ -1,13 +1,15 @@
 ﻿using Entidades;
+using Entidades.Excepciones;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 
 namespace AccesoDatos
 {
     public class ComentariosDatos
     {
-        private string cadena = "Server=DESKTOP-95LI9O3;Database=MiSitioPersonal;Trusted_Connection=True;";
-        
+        private string cadena = ConfigurationManager.ConnectionStrings["PaginaPresentacionDB"].ConnectionString;
+
         public ComentariosDatos()
         {
         }
@@ -26,7 +28,7 @@ namespace AccesoDatos
                     resultado = comando.ExecuteNonQuery();
                 }
             }
-            
+
             if (resultado == 1)
             {
                 return true;
@@ -44,25 +46,36 @@ namespace AccesoDatos
             string consulta = @"SELECT Id,Nombre,Texto 
                                 FROM ComenTarios";
 
-            using(SqlConnection conexion = new SqlConnection(cadena))
+
+            using (SqlConnection conexion = new SqlConnection(cadena))
             {
                 SqlCommand comando = new SqlCommand(consulta, conexion);
-                conexion.Open();
-                SqlDataReader reader = comando.ExecuteReader();
-
-                while (reader.Read())
+                try
                 {
-                    Comentario comentario = new Comentario()
-                    {
-                        Id = reader.GetInt32(0),
-                        Nombre = reader.GetString(1),
-                        Texto = reader["Texto"].ToString()
-                    };
+                    conexion.Open();
+                    SqlDataReader reader = comando.ExecuteReader();
 
-                    resultado.Add(comentario);
+                    while (reader.Read())
+                    {
+                        Comentario comentario = new Comentario()
+                        {
+                            Id = reader.GetInt32(0),
+                            Nombre = reader.GetString(1),
+                            Texto = reader["Texto"].ToString()
+                        };
+
+                        resultado.Add(comentario);
+                    }
                 }
+                catch(SqlException ex)
+                {
+                    //Puedo hacer algo con la excepcion, por ejemplo guardar el mensaje en un archivo de log
+                    throw new CapaDeDatosException();
+                }
+
             }
-            
+
+
 
             return resultado;
         }
@@ -73,7 +86,7 @@ namespace AccesoDatos
                                 WHERE Id={id}";
 
             int resultado;
-            using(SqlConnection conexion = new SqlConnection(cadena))
+            using (SqlConnection conexion = new SqlConnection(cadena))
             {
                 SqlCommand comando = new SqlCommand(consulta, conexion);
                 conexion.Open();

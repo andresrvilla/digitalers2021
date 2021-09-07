@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Entidades;
+using Entidades.Excepciones;
 using Negocio;
 
 namespace MiPaginaPresentacion.MasInformacion
@@ -31,9 +33,17 @@ namespace MiPaginaPresentacion.MasInformacion
             //{
             //    comentarios = (List<Comentario>)ViewState["comentarios"];
             //}
-
-            lstComentarios.DataSource = comentarioNegocio.ObtenerComentarios();
-            lstComentarios.DataBind();
+            try
+            {
+                lstComentarios.DataSource = comentarioNegocio.ObtenerComentarios();
+                lstComentarios.DataBind();
+            }
+            catch(CapaDeDatosException ex)
+            {
+                lblError.Text = "Ocurrio un error al pedir los comentarios:";
+                pnlError.Visible = true;
+            }
+            
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)

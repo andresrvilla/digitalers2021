@@ -3,7 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <asp:Panel runat="server" ID="pnlError" Visible="false" role="alert" CssClass="alert alert-danger">
+        <asp:Label runat="server" ID="lblError"></asp:Label>
+    </asp:Panel>
     <div class="row">
         <div class="col">
             <h5>¿Quien soy?</h5>
