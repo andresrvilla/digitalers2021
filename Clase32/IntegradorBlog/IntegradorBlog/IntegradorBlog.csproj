@@ -493,6 +493,16 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntegradorBlog.Entidades\IntegradorBlog.Entidades.csproj">
+      <Project>{3949C587-6635-4F4B-9B8C-836B9FB5DCB2}</Project>
+      <Name>IntegradorBlog.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IntegradorBlog.Negocio\IntegradorBlog.Negocio.csproj">
+      <Project>{38DA79E7-364B-453D-BD19-BD991BF1B741}</Project>
+      <Name>IntegradorBlog.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

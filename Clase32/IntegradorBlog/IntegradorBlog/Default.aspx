@@ -6,14 +6,18 @@
             <div class="card-group">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Noticia Destacada 1</h5>
+                        <h5 class="card-title">
+                            <asp:Label runat="server" ID="lblTituloDestacadoUno"></asp:Label>
+                        </h5>
                         <p class="card-text">Texto de la noticia destacada 1</p>
                         <p class="card-text"><small class="text-muted">20/09/2021</small></p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Noticia Destacada 2</h5>
+                        <h5 class="card-title">
+                            <asp:Label runat="server" ID="lblTituloDestacadoDos"></asp:Label>
+                        </h5>
                         <p class="card-text">Resumen de la otra noticia destacada</p>
                         <p class="card-text"><small class="text-muted">20/09/2021</small></p>
                     </div>
