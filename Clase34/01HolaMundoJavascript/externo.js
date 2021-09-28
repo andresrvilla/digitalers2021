@@ -1,0 +1,1 @@
+alert("Esto es un hola mundo desde un archivo externo");

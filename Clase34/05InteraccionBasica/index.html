@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var datoIngresado = prompt("Ingrese su nombre");
+        var mayor = confirm("Es mayor de edad?");
+        var fechaNacimiento = prompt("Ingrese su fecha de nacimiento");
+        // parseInt() convierte a entero
+        // parseFloat() convierte a decimal
+        fechaNacimiento = parseInt(fechaNacimiento);
+        var edad = 2021 - fechaNacimiento;
+        //edad = 2021 + fechaNacimiento; ejemplo de que contatenaba
+        alert(`El nombre es ${datoIngresado}, tiene ${edad} años y es mayor? ${mayor}`);
+    </script>
+</body>
+</html>
