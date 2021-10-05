@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btnRojo">Rojo</button>
+    <button id="btnAzul">Azul</button>
+    <script>
+        var elementoRojo = document.getElementById("btnRojo");
+        elementoRojo.onclick = cambiaColor;
+        var elementoAzul = document.getElementById("btnAzul");
+        elementoAzul.onclick = cambiaColor;
+
+        function cambiaColor() {
+            var color = this.innerText;
+            switch (color) {
+                case "Rojo":
+                    elementoRojo.style.color = "white";
+                    //"background-color"
+                    elementoRojo.style.backgroundColor = "red";
+                    break;
+                case "Azul":
+                    elementoAzul.style.color = "white";
+                    //"background-color"
+                    elementoAzul.style.backgroundColor = "blue";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="miContenido">XXX</div>
+    <div id="miOtroContenido">YYY</div>
+    <div id="variasLineas"></div>
+    <script>
+        var elElemento = document.getElementById("miContenido");
+        elElemento.innerText = "Hola Mundo";
+
+        var elOtroElemento = document.getElementById("miOtroContenido");
+        //elOtroElemento.innerText = "<b>Hola Edmundo</b>";
+        elOtroElemento.innerHTML = "<b>Hola Edmundo</b><br><i>Hola Raimundo</i>";
+
+
+        var elemVariasLineas = document.getElementById("variasLineas");
+        var lineas = [];
+        lineas.push("Linea Uno");
+        lineas.push("Linea Dos");
+        lineas.push("Linea Tres");
+        lineas.push("Linea Cuatro");
+        lineas.push("Linea Cinco");
+
+        for (var i = 0; i < lineas.length; i++) {
+            var lineaActual = lineas[i];
+            //elemVariasLineas.innerHTML =  elemVariasLineas.innerHTML + lineaActual+"<br>";
+            elemVariasLineas.innerHTML += lineaActual + "<br>";
+        }
+
+    </script>
+</body>
+
+</html>

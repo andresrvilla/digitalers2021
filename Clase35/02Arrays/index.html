@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arregloA = [];
+        arregloA.push("Un Elemento");
+        arregloA.push(100);
+        arregloA[2] = 90;
+
+        arregloA[5] = false;
+
+        console.log(arregloA);
+        console.log(arregloA[0]);
+        console.log(arregloA[3]);
+
+        var arregloB = [1, 2, 3, 4, 5];
+        console.log(arregloB);
+        var elItem = arregloB.pop();
+        console.log(elItem);
+        console.log(arregloB);
+
+        var arregloC = [1, 2, 3, 4, 5, 6, 7, 8];
+        var extracto = arregloC.splice(3,2,"Algo nuevo", "Otro");
+        console.log(arregloC);
+        console.log(extracto);
+
+    </script>
+</body>
+
+</html>

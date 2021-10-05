@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtSaludo" />
+    <button id="btnSaludar">Saludar</button>
+    <script>
+        var elementoBoton = document.getElementById("btnSaludar");
+        elementoBoton.onclick = saludo;
+
+        function saludo(){
+            var elementoSaludo = document.getElementById("txtSaludo");
+            elementoSaludo.value= "Hola Mundo";
+        }
+    </script>
+</body>
+</html>
