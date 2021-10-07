@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        valorUno = 10;
+        var valorUno;
+        console.log(valorUno);
+
+        //Falla porque tiene que declararse antes
+        //valorDos = 20;
+        //let valorDos;
+        //console.log(valorDos);
+
+        var x;
+        var x = 100;
+        console.log(x);
+
+        //let nuevo = "Hola";
+        //let nuevo = "Chau";
+        
+        console.log("----------");
+
+        var prueba = 10;
+        if(true){
+            var prueba = 20;
+            console.log(prueba);
+        }
+        console.log(prueba);
+
+        let prueba2 = 10;
+        if(true){
+            let prueba2 = 20;
+            console.log(prueba2);
+        }
+        console.log(prueba2);
+
+        const valorConstante = 1000;
+        //valorConstante = 100;
+        const valorConstanteDos;
+        valorConstanteDos = 100;
+    </script>
+</body>
+</html>

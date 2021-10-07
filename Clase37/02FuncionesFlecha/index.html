@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btnSaludar">Saludar</button>
+    <script>
+        /*
+        (v1,v2) => v1+v2;
+        */
+
+        const suma = (v1, v2) => v1 + v2;
+
+        console.log(suma(1,2));
+
+        /*
+        (v1,v2) => {
+            let resultado = v1 + v2;
+            return v1 + v2;
+        }
+        */
+
+        const sumaVersionDos = (v1,v2) => {
+            let resultado = v1 + v2;
+            return v1 + v2;
+        }
+
+        console.log(sumaVersionDos(2,3));
+
+        /*
+        n => n * 2;
+        */
+
+        const cuadrado = n => n * 2;
+        console.log(cuadrado(2));
+
+        /*
+        () => "Hola";
+        */
+
+        const saludar = () => "Hola";
+        console.log(saludar());
+
+        let elementoBoton = document.getElementById("btnSaludar");
+        
+        elementoBoton.onclick = () => alert("Hola");
+
+    </script>
+</body>
+
+</html>

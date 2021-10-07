@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnCargar">Cargar</button>
+    <ul id="titulos"></ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $("#btnCargar").click(() => {
+            $.get("http://jsonplaceholder.typicode.com/posts",(datos) => {
+                for(var i =0; i < datos.length; i++){
+                    var post = datos[i];
+                    var item = `<li>${post.title}</li>`
+                    $("#titulos").append(item);
+                }
+            })
+        });
+    </script>
+</body>
+</html>

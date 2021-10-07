@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <p></p>
+    <div id="unDiv"></div>
+    <div class="claseCss"></div>
+    <div class="claseCss"></div>
+    <script>
+        /*
+            Selector CSS:
+                - Nombre de etiqueta (p)
+                - Nombre de un id (#elid)
+                - Nombre de una clase (.clase)
+            $("SELECTORCSS") -> Devuelve un elemento del DOM
+            $("SELECTORCSS").metodo(p1,p2,...,pn);
+        */
+       $("p").text("Hola mundo"); //text es equivalente al innerText
+
+       $("#unDiv").html("<b>Hola Mundo</b>"); //html es equivalente al innerHTML
+
+       $(".claseCss").text("Hola mundo buscando por clase");
+       //Es equivalente a:
+       /*var elementos = document.getElementsByClassName("claseCss");
+       for(var i = 0; i < elementos.length; i++){
+           var e = elementos[i];
+           e.innerText = "Hola mundo buscando por clase";
+       }*/
+
+       $("#unDiv").addClass("miNuevaClaseCSS");
+       $("#unDiv").removeClass("miViejaClaseCSS");
+
+       //El animate solo funciona con propiedades css numericas.
+       // Si quiero otras propiedades como por ejemplo el color
+       // Puedo incorporar "jQuery UI"
+       $(".claseCss").animate({
+           fontSize: 32
+       },4000);
+
+    </script>
+
+    <input type="text" id="txtNombre" /><br>
+    <button id="btnSaludar">Saludar</button><br>
+    <span id="spnSaludo"></span><br>
+    <script>
+        $("#btnSaludar").click(() => {
+            var nombre = $("#txtNombre").val();
+            $("#spnSaludo").text(`Hola ${nombre}`);
+            //$("#spnSaludo").text(`Hola ${$("#txtNombre").val()}`);
+        });
+    </script>
+
+</body>
+</html>
